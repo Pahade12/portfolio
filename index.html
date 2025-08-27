@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kaushik Pahade — Portfolio</title>
+  <meta name="description" content="Kaushik Pahade — B.Tech (ETC) graduate. Core Java & Web (HTML, CSS, JS). JLPT N4, N3 in progress. Looking for entry-level roles." />
+  <meta name="author" content="Kaushik Pahade">
+  <meta property="og:title" content="Kaushik Pahade — Software Engineer" />
+  <meta property="og:description" content="Core Java & Web — JLPT N4 (N3 in progress). B.Tech ETC (July 2025)." />
+
+  <!-- Font (optional) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- main stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- SPLASH / LOADER -->
+  <div id="splash" aria-hidden="false">
+    <div class="splash-inner" role="status" aria-live="polite">
+      <div class="splash-msg" id="splash-msg">WELCOME</div>
+      <div class="splash-sub">Kaushik Pahade — Portfolio</div>
+      <div class="splash-spinner" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <!-- MAIN SITE -->
+  <div id="site" class="site" hidden>
+
+    <!-- HEADER -->
+    <header class="site-header" role="banner">
+      <div class="container nav" data-reveal>
+        <a class="logo" href="#hero">Kaushik Pahade</a>
+		
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#japanese">日本語</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <!-- GitHub -->
+          <a class="icon-link" href="https://github.com/Pahade12" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.112.82-.262.82-.583 0-.287-.01-1.047-.016-2.055-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.744.082-.729.082-.729 1.205.085 1.84 1.238 1.84 1.238 1.07 1.835 2.807 1.305 3.492.997.108-.775.418-1.305.76-1.605-2.665-.3-5.467-1.335-5.467-5.933 0-1.31.468-2.382 1.235-3.222-.123-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 0 1 3-.404c1.02.005 2.045.138 3 .404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.12 3.176.77.84 1.234 1.912 1.234 3.222 0 4.61-2.807 5.63-5.48 5.922.43.37.823 1.102.823 2.222 0 1.605-.015 2.898-.015 3.293 0 .323.216.7.825.58C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a class="icon-link" href="https://www.linkedin.com/in/kaushik-pahade" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.206 24 24 23.226 24 22.271V1.729C24 .774 23.206 0 22.225 0zM7.078 20.452H3.545V9h3.533v11.452zM5.31 7.58c-1.127 0-2.042-.918-2.042-2.048 0-1.128.915-2.046 2.042-2.046s2.043.918 2.043 2.046c0 1.13-.916 2.048-2.043 2.048zM20.452 20.452h-3.533v-5.585c0-1.331-.025-3.042-1.853-3.042-1.854 0-2.137 1.447-2.137 2.943v5.684h-3.532V9h3.391v1.561h.048c.472-.895 1.626-1.838 3.346-1.838 3.578 0 4.236 2.354 4.236 5.414v6.315z"/>
+            </svg>
+          </a>
+
+          <!-- Instagram -->
+          <a class="icon-link" href="https://www.instagram.com/kaushik_pahade_/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.343 3.608 1.317.975.975 1.255 2.242 1.317 3.608.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.062 1.366-.343 2.633-1.317 3.608-.975.975-2.242 1.255-3.608 1.317-1.265.058-1.645.07-4.849.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.343-3.608-1.317-.975-.975-1.255-2.242-1.317-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.849c.062-1.366.343-2.633 1.317-3.608.975-.975 2.242-1.255 3.608-1.317C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.012 7.052.07 5.772.127 4.675.357 3.758 1.273 2.842 2.19 2.612 3.287 2.555 4.567.012 8.332 0 8.741 0 12s.012 3.668.07 4.948c.062 1.28.292 2.377 1.208 3.293.917.917 2.014 1.147 3.294 1.208C8.332 23.988 8.741 24 12 24s3.668-.012 4.948-.07c1.28-.062 2.377-.292 3.293-1.208.917-.917 1.147-2.014 1.208-3.294.058-1.28.07-1.689.07-4.948s-.012-3.668-.07-4.948c-.062-1.28-.292-2.377-1.208-3.293-.917-.917-2.014-1.147-3.293-1.208C15.668.012 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 1-2.879 0 1.44 1.44 0 0 1 2.879 0z"/>
+            </svg>
+          </a>
+
+          <!-- Theme toggle -->
+          <button id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle theme">🌙</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero" class="hero" aria-label="Intro">
+      <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="container hero-inner" data-reveal>
+        <div class="hero-left">
+			  <marquee>The site is currently under development, with exciting projects and updates coming soon!”</marquee>
+
+          <h1 class="name">Hi I'm  <span class="accent">Kaushik Ramesh Pahade </span> </h1>
+          <p class="role">Software Engineer</p>
+          <p class="lead">I am a B.Tech graduate in Electronics and Telecommunication with a strong foundation in Core Java and web development, including HTML, CSS, and JavaScript. I am JLPT N4 certified, capable of understanding basic Japanese used in daily life and professional settings, and able to read simple Japanese documentation. As a motivated fresher, I aim to leverage my programming skills and language proficiency to contribute effectively as a software engineer. I am passionate about learning, problem-solving, and collaborating in diverse environments to deliver high-quality software solutions.</p>
+         <div class="cta-row">
+  <a class="btn btn-primary" href="D:\P6\Assets\B.tech.pdf" download>Download Resume</a>
+  <a class="btn" href="mailto:kaushikpahade12@gmail.com">Email</a>
+</div>
+
+<br>
+          <ul class="meta">
+		  <p> <strong> Technical Key Skills:
+		  <br>
+		 ・ Core Java & Advance Java.
+		  <br>
+		 ・ HTML /CSS /JS. 	
+		  <br>
+		 ・ Oracle SQL.
+		  <br>
+		 ・ React JS (Currently learning).
+		  <br>
+		 ・ Springboot (Currently Learning).
+		  <br>
+					   
+		  </strong></p>
+            <li><strong>Location:</strong> Nagpur - Maharashtra,India.</li>
+            
+          </ul>
+        </div>
+
+        <aside class="hero-right">
+          <div class="portrait card">
+            <img src="D:\P6\Assets\profile.png" alt="Profile" onerror="this.src='https://via.placeholder.com/480x480?text=Profile'">
+          </div>
+
+          <div class="card jp-card">
+            <h3></strong>こんにちは、<strong>カウシク・パハデです</h3>
+            <p class="muted">私は電子通信（ETC）の学士号を取得しており、Core Java とウェブ開発（HTML、CSS、JavaScript）の基礎を身につけています。JLPT N4 取得済みで、日常生活や仕事で使われる簡単な日本語を理解し、簡単な日本語ドキュメントを読むことができます。意欲的なフレッシャーとして、プログラミングスキルと語学力を活かし、ソフトウェアエンジニアとして貢献することを目指しています。学習意欲が高く、問題解決やチームでの協力を通じて高品質なソフトウェアを提供することに情熱を持っています。）</p>
+            <div class="jp-badges">
+              <span class="tag">JLPT N4</span>
+              <span class="tag muted">N3 学習中</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-section" data-reveal>
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p>
+          I’m <strong>Kaushik Pahade</strong> a B.Tech graduate in Electronics and Telecommunication with a strong foundation in Core Java and web development, including HTML, CSS, and JavaScript. During my academic journey, I developed a mini project – a Smart Helmet for monitoring hazardous conditions – applying programming concepts and problem-solving skills to real-world applications. I am currently learning Spring Boot and React.js to enhance my full-stack development capabilities. I am JLPT N4 certified and preparing for N3, enabling me to understand and communicate in Japanese and read simple technical documentation. I am a motivated and quick learner, with strong problem-solving and teamwork skills, and a passion for exploring new technologies. Outside of coding, I enjoy football, chess, and staying updated with the latest tech trends. My goal is to leverage my technical expertise and language skills to contribute effectively as a software engineer and build impactful software solutions.
+        </p>
+        <p>
+          I have a keen interest in <strong>Japanese language & culture</strong> — completed <strong>JLPT N4</strong> and 
+          preparing for <strong>N3</strong>. Looking forward to opportunities where I can apply my technical and language skills together.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills-section" data-reveal>
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <ul class="skills-list">
+          <li><strong>Programming:</strong> Core Java (OOP, Collections, JDBC)</li>
+          <li><strong>Web:</strong> HTML, CSS, JavaScript</li>
+          <li><strong>Database:</strong> MySQL basics</li>
+          <li><strong>Tools:</strong> Git, GitHub, VS Code, Eclipse</li>
+          <li><strong>Languages:</strong> English, Hindi, Marathi, Japanese (N4, N3 in progress)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- JAPANESE (polished) -->
+    <section id="japanese" class="section japanese-section" data-reveal>
+      <div class="container">
+        <h2 class="section-title">日本語 — Japanese</h2>
+
+        <div class="japanese-grid">
+          <div class="card jp-card-professional">
+            <h3>日本語スキル</h3>
+            <p class="muted">JLPT N4に合格し、現在N3取得に向けて準備中です。日本語を学ぶことで、コミュニケーション能力や集中力が向上し、グローバルな機会が開けました。</p>
+            <p>私の目標は、バイリンガルコミュニケーションが求められる仕事や日本関連のプロジェクトで、ソフトウェア開発と日本語を融合させることです。</p>
+            <div class="jp-tags">
+              <span class="pill jp">日本語能力試験 N4 認定</span>
+              <span class="pill">JLPT N3取得中</span>
+            </div>
+          </div>
+
+          <div class="card jp-art">
+            <img src="D:\P6\Assets\jp.jpg" alt="anime illustration" onerror="this.src='https://via.placeholder.com/240x160?text=Anime'">
+            <p class="muted small">パハデ・カウシク</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects-section" data-reveal>
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div id="projects-grid" class="projects-grid"></div>
+        <p class="note muted">Projects will load dynamically from <code>projects.js</code>. Add projects using the template in that file.</p>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section certifications-section" data-reveal>
+      <div class="container">
+        <h2 class="section-title">Certifications</h2>
+        <p class="muted">Proof of achievements — click On View </p>
+
+        <div class="cert-grid">
+          <article class="card cert-card">
+            <div class="cert-thumbnail">
+              <img src="D:\P6\Assets\n4 logo.jpg"alt="certificate ">
+            </div>
+            <div class="cert-body">
+              <h4>JLPT N4 Certificate)</h4>
+              <p class="muted"> JLPT N4 しょうめい – にちじょうせいかつでつかわれるかんたんなにほんごのかいわやぶんしょうをりかいできるレベル。</p>
+              <div class="cert-actions">
+                <a class="btn" id="cert-jlpt" href="D:\P6\Assets\n4 result.png" target="_blank" rel="noopener">Click to View  </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card cert-card">
+            <div class="cert-thumbnail">
+              <img src="D:\P6\Assets\core-java.png" alt="JAVA certificate ">
+            </div>
+            <div class="cert-body">
+              <h4>Core Java</h4>
+              <p class="muted">Add certificate here later.</p>
+              <div class="cert-actions">
+                <a class="btn" id="cert-other" href="#" target="_blank" rel="noopener">Click to View </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section education-section" data-reveal>
+      <div class="container">
+        <h2 class="section-title">Education /Publications</h2>
+        <ul>
+          <li><strong>B.Tech (ETC)</strong> — KDK College of Engineering, Nagpur — <em>2021–2025</em> (Graduating July 2025)</li>
+          <li><strong>HSC</strong> — Maharashtra State Board — <em>2021</em></li>
+          <li><strong>SSC</strong> — Maharashtra State Board — <em>2019</em></li>
+        </ul>
+
+        <div class="card highlight" style="margin-top:1rem">
+          <h4>Research — Smart Mining Safety (JETIR 2025) Journal of Emerging Technologies and Innovative Research.</h4>
+          <p class="muted">Security is the most important element in every industry. Security and safety are the only factors in the mining industry. The mining sector employs numerous safety measures to stave off accidents of all kinds, including those using steel. Methane gas leaks and rising water levels in underground mines are both a result of rising temperatures. Workers are protected here. We activate the panic switch protection when the worker can neutralize the threat. A reliable communication system needs to be put in place to increase safety for workers in underground mines and between the fixed landmine system. The communication network shouldn't ever go down. To overcome this we have used wireless technology to send sensor data to users and display them on their device prior.</p>
+          <div class="research-actions">
+            <a class="btn research-btn" href="https://www.jetir.org/papers/JETIR2503844.pdf" target="_blank" rel="noopener">View Paper (JETIR)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section" data-reveal>
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p>If you’d like to get in touch, feel free to reach out via:</p>
+        <ul class="contact-list">
+          <li>Email: <a href="mailto:kaushikpahade12@gmail.com">kaushikpahade12@gmail.com</a></li>
+          
+          <li>GitHub: <a href="https://github.com/Pahade12" target="_blank">github</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/kaushik-pahade" target="_blank">Connect For Updates</a></li>
+          <li>Instagram: <a href="https://www.instagram.com/kaushik_pahade_/" target="_blank">@kaushik_pahade_</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <small>© <span id="year"></span> @Kaushik Pahade —Portfolio </small>
+        <nav class="foot-nav" aria-label="Footer navigation">
+          <a href="#hero">Top</a>
+          <a href="#projects">Projects</a>
+          
+        </nav>
+      </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+  </div>
+  <!-- end site -->
+
+  <!-- SCRIPTS (deferred) -->
+  <script src="projects.js" defer></script>
+  <script src="main.js" defer></script>
+</body>
+</html>
